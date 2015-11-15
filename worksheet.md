@@ -14,7 +14,7 @@ The pins on the Raspberry Pi have different purposes:
 
 1. You can test whether your GPIO pins and LEDs are working by building the circuit below.
 
-1. The LED is connected directly to the **3.3v** and **GND** pins, and should light up.
+1. The LED is connected directly to the **3.3v** pin and the **GND** pin via the 330 ohm resistor, and should light up.
 
 1. Be sure to connect your LED the correct way round; the longer leg should be connected to the 3v3 pin.
 
