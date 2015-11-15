@@ -6,3 +6,5 @@
   img: tactile-push-button
 - name: 1 x LED
   img: led
+- name: 1 x 330 ohm resistor 
+  img: resistor-330r
