@@ -1,14 +1,31 @@
 # Physical Computing with Scratch
 
-The version of Scratch included with the Raspberry Pi has a number of unique features; one of the most useful is its ability to communicate with the General-Purpose Input/Output pins, or GPIO. These pins allow you to connect your Raspberry Pi to a range of devices, from lights and motors to buttons and sensors. The Raspberry Pi 2 has 40 GPIO pins, whilst the original Raspberry Pi only has 26, but this workshop will work with either model.
+## GPIO pins
 
-![Raspberry Pi Pins](images/pinout.png)
+One powerful feature of the Raspberry Pi is the row of GPIO pins along the top edge of the board. GPIO stands for General-Purpose Input/Output. These pins are a physical interface between the Raspberry Pi and the outside world. At the simplest level, you can think of them as switches that you can turn on or off (input) or that the Pi can turn on or off (output).
 
-The pins on the Raspberry Pi have different purposes:
-- **Red** provide **5v** power (avoid using these unless specifically told to)
-- **Orange** provide **3.3v** power
-- **Black** - ground pins, like a negative connection on a battery
-- **Yellow** -  these switchable pins can be controlled from software, either switched on or off in **output** mode or detecting changes in voltage in **input** mode.
+The GPIO pins are a way in which the Raspberry Pi can control and monitor the outside world by being connected to electronic circuits. The Pi is able to control LEDs, turning them on or off, or motors, or many other things. It is also able to detect whether a switch has been pressed, or temperature, or light. We refer to this as physical computing.
+
+There are 40 pins on the Raspberry Pi (26 pins on early models), and the pins provide various different functions.
+
+If you have a RasPIO pin label, it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
+
+![](images/raspio-ports.jpg)
+
+If you don't have a pin label then this guide can help you to identify the pin numbers:
+
+![](images/pinout.png)
+
+You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
+
+
+| 3V3 | 3.3 volts | Anything connected to these pins will always get 3.3V of power |
+| 5V | 5 volts | Anything connected to these pins will always get 5V of power |
+| GND | ground | Zero volts, used to complete a circuit |
+| GP2 | GPIO pin 2 | These pins are for general-purpose use and can be configured as input or output pins |
+| ID_SC/ID_SD/DNC | Special purpose pins ||
+
+**WARNING**: If you follow the instructions, then playing about with the GPIO pins is safe and fun. Randomly plugging wires and power sources into your Pi, however, may destroy it, especially if using the 5V pins. Bad things can also happen if you try to connect things to your Pi that use a lot of power; LEDs are fine, motors are not. If you are worried about this, then you might want to consider using an add-on board such as the [Explorer HAT](https://shop.pimoroni.com/products/explorer-hat) until you are confident enough to use the GPIO directly.
 
 ## Lighting an LED
 
@@ -112,6 +129,11 @@ If everything is correct, your button should make the sprite move.
 
 ## What next?
 
-- Add a second button to your setup so that one button switches the LED on, but the other switches it off.
-- Add in two more LEDs so that you can produce a traffic light sequence. Use a button to start and stop the sequence.
-- Replace your button with another sensor, such as a PIR sensor to sense movement.
+There are lots of other things you can control or monitor with your Raspberry Pi. Have a look at the worksheets below, to see how easily this can be done.
+
+[Using an Active Buzzer](buzzer.md)  
+[Making Traffic Lights](trafficlights.md)  
+[Using a Light Dependent Resistor](ldr.md)  
+[Using a PIR Sensor](pir.md)  
+[Using an ultrasonic distance sensor](distance.md)
+
