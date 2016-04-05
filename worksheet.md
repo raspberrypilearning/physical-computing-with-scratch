@@ -35,7 +35,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 1. Be sure to connect your LED the correct way round; the longer leg should be connected to the 3v3 pin.
 
-![Test Circuit](images/test_circuit.png)
+![Test Circuit](images/led-3v3.png)
 
 ## Using a switchable pin
 
@@ -43,7 +43,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 1. In the diagram below **pin 17** has been used, but you can use any numbered pin you wish.
 
-![Test Circuit](images/blink_circuit.png)
+![Test Circuit](images/led-gpio17.png)
 
 ## Constructing a Scratch program
 
@@ -75,9 +75,9 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 1. As well as controlling the physical world, you can react to it using an input device such as a button.
 
-1. Connect your button to a breadboard, and then connect one pin to a ground pin and the other to a numbered GPIO pin. In this example **pin 4** has been used.
+1. Connect your button to a breadboard, and then connect one pin to a ground pin and the other to a numbered GPIO pin. In this example **pin 2** has been used.
 
-![Button wiring](images/button_setup.png)
+![Button wiring](images/button.png)
 
 ## Configuring your button
 
@@ -85,7 +85,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 1. Assuming you have started a new Scratch file, you will also need to start the GPIO server. The following code will configure pin 4 as an input.
 
-  ![Configure Pin 4](images/config4.png)
+  ![Configure Pin 2](images/config2.png)
 
 1. Once you have built the code above, you need to click the green flag in order for it to run and your pin to be set up.
 
@@ -93,7 +93,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
   ![Sensing Menu](images/sensing.png)
 
-1. From here you need to find the ![Slider Sensor](images/slider_sensor.png) block and click the triangle to reveal a menu. Select **gpio4** from the menu and click the tick box to the left.
+1. From here you need to find the ![Slider Sensor](images/slider_sensor.png) block and click the triangle to reveal a menu. Select **gpio2** from the menu and click the tick box to the left.
 
   ![Select sensor](images/sensing_select.png)
 
