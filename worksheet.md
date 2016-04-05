@@ -14,7 +14,7 @@ If you have a RasPIO pin label, it can help to identify what each pin is used fo
 
 If you don't have a pin label then this guide can help you to identify the pin numbers:
 
-![](images/pinout.png)
+![](images/GPIO.png)
 
 You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
