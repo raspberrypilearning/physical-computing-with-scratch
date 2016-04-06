@@ -14,4 +14,8 @@ Set up the circuit as shown below:
 
 Now you can sound the buzzer by using the code below.
 
+![buzzer on](images/buzzer_on.png)
+
 Or even make the buzzer beep.
+
+![buzzer bleep](images/buzzer_bleep.png)
