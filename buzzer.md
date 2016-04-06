@@ -12,12 +12,12 @@ Set up the circuit as shown below:
 
 ![buzzer](images/buzzer-circuit.png)
 
-Now you can sound the buzzer by using the code below.
+Now you can sound the buzzer by using the code below:
 
 ![buzzer on](images/buzzer_on.png)
 
-Or even make the buzzer beep.
+Or even make the buzzer beep:
 
 ![buzzer bleep](images/buzzer_bleep.png)
 
-Back to [Physical Computing With Scratch](worksheet.md)
+Back to [Physical computing with Scratch](worksheet.md)
