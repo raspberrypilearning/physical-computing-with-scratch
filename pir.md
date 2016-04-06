@@ -24,4 +24,4 @@
 
 1. If the value doesn't change, check that the correct pins are connected.
 
-Back to [Getting started with physical computing](worksheet.md)
+Back to [Physical Computing With Scratch](worksheet.md)

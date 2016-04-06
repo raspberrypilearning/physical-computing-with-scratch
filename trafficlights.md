@@ -85,3 +85,5 @@ To save on using 5 different ground pins, you can just plug a single Gnd pin int
 ![screen10](images/screen10.png)
 
 1. And now you should have a working traffic light and crossing, all in Scratch.
+
+Back to [Physical Computing With Scratch](worksheet.md)
