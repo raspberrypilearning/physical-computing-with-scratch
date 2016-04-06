@@ -82,6 +82,6 @@ To save on using 5 different ground pins, you can just plug a single Gnd pin int
 
 1. Lastly, you can have the main script `broadcast beep and wait` when the button has been pushed.
 
-![screen10](images/scree10.png)
+![screen10](images/screen10.png)
 
 1. And now you should have a working traffic light and crossing, all in Scratch.
