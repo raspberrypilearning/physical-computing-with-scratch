@@ -6,3 +6,7 @@
   img: tactile-push-button
 - name: 1 x LED
   img: led
+- name: PIR
+  img: pir
+- name: buzzer
+  img: piezo-buzzer
