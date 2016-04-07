@@ -1,4 +1,22 @@
-# Test a PIR motion sensor in Scratch
+# Passive infrared motion sensor (PIR)
+
+Humans and other animals emit heat all the time. 
+
+A PIR sensor detects changes in the amount of IR radiation (heat) it receives. When there is a change, then a pulse is triggered. This means that a PIR sensor can detect when a human (or any animal) moves in front of it.
+
+![pir](images/pir_module.png)
+
+## Wiring a PIR sensor
+
+The pulse emitted when a PIR detects motion needs to be amplified, and so it needs to be powered. There are three pins on the PIR; they should be labelled `Vcc`, `Gnd`, and `Out`. If these labels aren't clear, they are sometimes concealed beneath the Fresnel lens (the white cap), which you can temporarily remove to see the pin labels.
+
+![wiring](images/pir_wiring.png)
+
+1. As shown above, the `Vcc` pin needs attaching to a `5V` pin on the Raspberry Pi.
+1. The `Gnd` pin on the PIR sensor can be attached to *any* ground pin on the Raspberry Pi.
+1. Lastly, the `Out` pin needs to be connected to any of the GPIO pins.
+
+## Coding a PIR sensor
 
 1.  With your PIR circuit complete, you are now ready to use Scratch to sense motion. Launch the Scratch program by clicking on **Menu** followed by **Programming** and selecting **Scratch**.
 
