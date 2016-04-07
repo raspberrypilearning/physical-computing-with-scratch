@@ -12,6 +12,8 @@ Set up the circuit as shown below:
 
 ![buzzer](images/buzzer-circuit.png)
 
+## Coding a buzzer
+
 Now you can sound the buzzer by using the code below:
 
 ![buzzer on](images/buzzer_on.png)
@@ -19,5 +21,9 @@ Now you can sound the buzzer by using the code below:
 Or even make the buzzer beep:
 
 ![buzzer bleep](images/buzzer_bleep.png)
+
+## What Next?
+
+- Have a go at making a set of [traffic lights](trafficlights.md), with a pedestrian crossing signal.
 
 Back to [Physical computing with Scratch](worksheet.md)

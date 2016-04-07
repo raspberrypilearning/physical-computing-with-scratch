@@ -42,4 +42,10 @@ The pulse emitted when a PIR detects motion needs to be amplified, and so it nee
 
 1. If the value doesn't change, check that the correct pins are connected.
 
+## What Next?
+
+- Why not try and wire up a buzzer as well, to make a burglar alarm?
+- Have a go at making a [Santa Detector](https://www.raspberrypi.org/learning/santa-detector/)
+
 Back to [Physical computing with Scratch](worksheet.md)
+

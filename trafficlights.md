@@ -86,4 +86,9 @@ To help the visually impaired, a crossing normally beeps when it is safe to cros
 
 1. And now you should have a working traffic light and crossing, all in Scratch!
 
+## What Next?
+
+- Can you alter the beeping, so that it becomes faster to warn the pedestrian that their time is nearly up?
+- How about adding in a second set of lights, to simulate a crossroads?
+
 Back to [Physical computing with Scratch](worksheet.md)
