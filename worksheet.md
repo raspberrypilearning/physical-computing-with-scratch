@@ -32,7 +32,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 You can test whether your GPIO pins and LEDs are working by building the circuit below. You can use any resistor over about 50Ω.
 
-1. The LED is connected directly to the **3.3V** and **GND** pins, and should light up.
+1. The LED is connected directly to the **3V3** pin and the **GND** pin via the 330 Ohm resistor, and should light up.
 
 1. Be sure to connect your LED the correct way round; the longer leg should be connected to the 3V3 pin:
 
