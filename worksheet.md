@@ -58,19 +58,19 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 
 1.  Click on **Control** in the top-left display. Drag the `when GreenFlag clicked` block onto the scripts area:
 
-![greenflag](images/greenflag.png)
+  ![greenflag](images/greenflag.png)
 
 1. Scratch uses **broadcast** blocks to communicate with the GPIO pins; the first broadcast you need is `gpioserveron` which activates the GPIO functionality:
 
-![gpioserveron](images/gpioserveron.png)
+  ![gpioserveron](images/gpioserveron.png)
 
 1. As your GPIO pin can be used as either input or output, you'll need to specify in which mode your pin is being used with the `config17out` broadcast:
 
-![config17on](images/config17.png)
+  ![config17on](images/config17.png)
 
 1. From this point on, you can control your LED using two broadcasts: `gpio17high` to turn it on and `gpio17low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
 
-![Flashing LED](images/led_flash.png)
+  ![Flashing LED](images/led_flash.png)
 
 ## Connecting a button
 
