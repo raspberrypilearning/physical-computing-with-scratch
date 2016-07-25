@@ -108,15 +108,15 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 
 1. Now that your button is all set up and working, you can make it do something. You can start off by making it control a sprite.
 
-1. Begin with a `forever` loop with an `if` block inside it. This will continually check the `if` condition and perform some action if the condition is met. The action in the example below will make the current sprite move forward:
+1. Begin with a `forever` loop with an `if` block inside it. This will continually check the `if` condition and perform some action if the condition is met. The action in the example below will make the current sprite say "Hello!":
 
     ![Loop with condition](images/conditional_loop.png)
 
-1. Finally, to make this work you need to add the condition, which is that we want the move action to happen when the **button value = 0**:
+1. Finally, to make this work you need to add the condition, which is that we want the sprite to speak when the **button value = 0**:
 
     ![Complete Code](images/button_code.png)
 
-If everything is correct, your button should make the sprite move.
+If everything is correct, your button should make the sprite speak.
 
 ## Controlling an LED with a button push
 
