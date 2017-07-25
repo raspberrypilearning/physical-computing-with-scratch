@@ -1,0 +1,28 @@
+---
+title: Physical Computing With Scratch
+hero_image: images/banner.png
+description: A guide to getting started with physical computing and Scratch
+original_url: https://raspberrypi.org/learning/physical-computing-with-scratch
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Physical computing with Scratch
+- title: GPIO pins
+- title: Lighting an LED
+- title: Using a switchable pin
+- title: Constructing a Scratch program
+- title: Connecting a button
+- title: Configuring your button
+- title: Responding to a button press
+- title: Controlling an LED with a button push
+- title: What next?
+
