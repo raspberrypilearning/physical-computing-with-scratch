@@ -1,24 +1,14 @@
-## Configuring your button
+## Responding to a button press
 
-- Before Scratch can react to your button, it needs to be told which pin is configured as an input pin.
+- Now that your button is all set up and working, you can make it do something. You can start off by making it control a sprite.
 
-- Assuming you have started a new Scratch file, you'll also need to start the GPIO server. The following code will configure pin 4 as an input:
+- Begin with a `forever` loop with an `if` block inside it. This will continually check the `if` condition and perform some action if the condition is met. The action in the example below will make the current sprite say "Hello!":
 
-  ![Configure Pin 2](images/config2.png)
+    ![Loop with condition](images/conditional_loop.png)
 
-- Once you have built the code above, you need to click the green flag in order for it to run and for your pin to be set up.
+- Finally, to make this work you need to add the condition, which is that we want the sprite to speak when the **button value = 0**:
 
-- Next, you need to go to the Sensing menu in Scratch:
+    ![Complete Code](images/button_code.png)
 
-  ![Sensing Menu](images/sensing.png)
-
-- From here you need to find the ![Slider Sensor](images/slider_sensor.png) block and click the triangle to reveal a menu. Select **gpio2** from the menu and click the tickbox to the left:
-
-  ![Select sensor](images/sensing_select.png)
-
-- You should now see the current state of the pin in the stage area:
-
-  ![Button state](images/button_watch.png)
-
-- Now when you press your button, the state should change from 1 to 0.
+If everything is correct, your button should make the sprite speak.
 

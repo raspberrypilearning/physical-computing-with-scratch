@@ -1,10 +1,23 @@
-## Controlling an LED with a button push
+## Buzzers
 
-To finish off, you can combine your two programs so that the button can turn the LED on and off.
+There are two main types of buzzer: **active** and **passive**.
 
-- Adapt your script and use an `If Else` block so that it looks like the example below:
+A passive buzzer emits a tone when a voltage is applied across it. It also requires a specific signal to generate a variety of tones. The active buzzers are a lot simpler to use, so these are covered here.
 
-    ![Complete code](images/button_led.png)
+### Connecting a buzzer
 
-- Now when you push the button, the LED should light up.
+An active buzzer can be connected just like an LED, but as they are a little more robust, you won't be needing a resistor to protect them.
 
+Set up the circuit as shown below:
+
+![buzzer](images/buzzer-circuit.png)
+
+### Coding a buzzer
+
+Now you can sound the buzzer by using the code below:
+
+![buzzer on](images/buzzer_on.png)
+
+Or even make the buzzer beep:
+
+![buzzer bleep](images/buzzer_bleep.png)

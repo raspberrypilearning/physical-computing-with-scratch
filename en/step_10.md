@@ -1,14 +1,10 @@
-## Responding to a button press
+## Controlling an LED with a button push
 
-- Now that your button is all set up and working, you can make it do something. You can start off by making it control a sprite.
+To finish off, you can combine your two programs so that the button can turn the LED on and off.
 
-- Begin with a `forever` loop with an `if` block inside it. This will continually check the `if` condition and perform some action if the condition is met. The action in the example below will make the current sprite say "Hello!":
+- Adapt your script and use an `If Else` block so that it looks like the example below:
 
-    ![Loop with condition](images/conditional_loop.png)
+    ![Complete code](images/button_led.png)
 
-- Finally, to make this work you need to add the condition, which is that we want the sprite to speak when the **button value = 0**:
-
-    ![Complete Code](images/button_code.png)
-
-If everything is correct, your button should make the sprite speak.
+- Now when you push the button, the LED should light up.
 

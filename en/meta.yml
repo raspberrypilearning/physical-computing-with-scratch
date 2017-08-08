@@ -15,7 +15,6 @@ site_areas: ''
 steps:
 - title: Introduction
 - title: What you will need
-- title: Physical computing with Scratch
 - title: GPIO pins
 - title: Lighting an LED
 - title: Using a switchable pin
@@ -24,5 +23,7 @@ steps:
 - title: Configuring your button
 - title: Responding to a button press
 - title: Controlling an LED with a button push
-- title: What next?
+- title: Buzzers
+- title: PIRs
+- title: Traffic lights
 

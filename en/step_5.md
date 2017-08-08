@@ -1,10 +1,8 @@
-## Lighting an LED
+## Using a switchable pin
 
-You can test whether your GPIO pins and LEDs are working by building the circuit below. You can use any resistor over about 50Ω.
+- To control the LED, you'll need to adapt your circuit to use a switchable pin.
 
-- The LED is connected directly to the **GND** pin and the **3V3** pin via the 330 Ohm resistor, and should light up.
+- In the diagram below **pin 17** has been used, but you can use any numbered pin you wish.
 
-- Be sure to connect your LED the correct way round; the longer leg should be connected to the 3V3 pin:
-
-![Test Circuit](images/led-3v3.png)
+![Test Circuit](images/led-gpio17.png)
 
