@@ -3,14 +3,14 @@ title: Physical Computing With Scratch
 hero_image: images/banner.png
 description: A guide to getting started with physical computing and Scratch
 original_url: https://raspberrypi.org/learning/physical-computing-with-scratch
-theme: red
+theme: orange
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
 interests: ''
-technologies: rpi, physical computing, python
+technologies: physical computing, scratch
 site_areas: ''
 steps:
 - title: Introduction
