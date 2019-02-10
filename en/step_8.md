@@ -2,7 +2,7 @@
 
 - Before Scratch can react to your button, it needs to be told which pin is configured as an input pin.
 
-- Assuming you have started a new Scratch file, you'll also need to start the GPIO server. The following code will configure pin 4 as an input:
+- Assuming you have started a new Scratch file, you'll also need to start the GPIO server. The following code will configure pin 2 as an input:
 
   ![Configure Pin 2](images/config2.png)
 
@@ -21,4 +21,3 @@
   ![Button state](images/button_watch.png)
 
 - Now when you press your button, the state should change from 1 to 0.
-
