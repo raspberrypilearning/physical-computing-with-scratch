@@ -1,26 +1,29 @@
-## Constructing a Scratch program
+## Constructing a Scratch 2 program
 
--  Locate the Scratch program by clicking on **Menu** followed by **Programming**, and selecting **Scratch**.
+1.  Locate the Scratch 2 program by clicking on **Menu** followed by **Programming**, and selecting **Scratch 2**, remember to use version 2, not version 1.
 
  ![](images/scratch-icon.png)
 
-- The familiar Scratch interface will then load:
+1. The familiar Scratch interface will then load:
 
  ![](images/Scratch-interface.png "The Scratch Interface")
 
--  Click on **Control** in the top-left display. Drag the `when GreenFlag clicked` block onto the scripts area:
+1. We need to setup Scratch to use the GPIO pins. Click on **More Blocks** in the top right display and click on **Add an Extension**.
+
+![](images/add-an-extension.png)
+
+1. Select Pi GPIO and click on.  
+
+![](images/pi-gpio.png)
+
+1. You will see two new blocks appear, we will be using these to control and sense the GPIO pins.
+
+![](images/new-blocks.png)
+
+1.  Click on **Events** in the top-right (Scripts tab) display. Drag the `when GreenFlag clicked` block onto the scripts area:
 
   ![greenflag](images/greenflag.png)
 
-- Scratch uses **broadcast** blocks to communicate with the GPIO pins; the first broadcast you need is `gpioserveron` which activates the GPIO functionality:
-
-  ![gpioserveron](images/gpioserveron.png)
-
-- As your GPIO pin can be used as either input or output, you'll need to specify in which mode your pin is being used with the `config17out` broadcast:
-
-  ![config17on](images/config17.png)
-
-- From this point on, you can control your LED using two broadcasts: `gpio17high` to turn it on and `gpio17low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
+1. From this point on, you can control your LED using the two new blocks: `set gpio 17 to output high` to turn it on and `set gpio 17 to output low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
 
   ![Flashing LED](images/led_flash.png)
-

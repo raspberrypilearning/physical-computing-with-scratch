@@ -17,6 +17,8 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 1. Place the components on the breadboard and connect them to the Raspberry Pi GPIO pins, as shown below:
 
     ![GPIO diagram](images/camjam1wiring.png)
+    ``The button needs to be connected to 3v3, Scratch 2 does not enable pull-up resistors``
+    ``Image needs to be updated``
 
 1. This table shows which GPIO pin is connected to which component, in case you get lost:
 
@@ -32,9 +34,9 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 
 1. Open Scratch and save a new file.
 
-1. The first step is to configure all the GPIO pins, so that they are set to be inputs and outputs. Use broadcast blocks, as shown below:
+1. The first step is to make sure the `Pi GPIO` extension is enabled in the **More Blocks** menu
 
-    ![screen1](images/screen1.png)
+    ![screen1](images/new-blocks.png)
 
 1. Now use another `when greenflag clicked` block to set a variable called `pushed` to `False` when the script starts:
 

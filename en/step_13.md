@@ -1,9 +1,8 @@
-## Traffic lights
-
+# Traffic lights
 
 For this worksheet you'll need a breadboard, three LEDs, a button, a buzzer, and the necessary jumper cables and resistors. You can purchase these individually, or get everything you need in the [CamJam EduKit](https://thepihut.com/products/camjam-edukit).
 
-### Wiring
+## Wiring
 
 To get started, you'll need to place all the components on the breadboard and connect them to the Raspberry Pi.
 
@@ -18,6 +17,8 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 1. Place the components on the breadboard and connect them to the Raspberry Pi GPIO pins, as shown below:
 
     ![GPIO diagram](images/camjam1wiring.png)
+    ``The button needs to be connected to 3v3, Scratch 2 does not enable pull-up resistors``
+    ``Image needs to be updated``
 
 1. This table shows which GPIO pin is connected to which component, in case you get lost:
 
@@ -29,13 +30,13 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 | Green LED | 7        |
 | Buzzer    | 15       |
 
-### Setting up the scripts
+## Setting up the scripts
 
 1. Open Scratch and save a new file.
 
-1. The first step is to configure all the GPIO pins, so that they are set to be inputs and outputs. Use broadcast blocks, as shown below:
+1. The first step is to make sure the `Pi GPIO` extension is enabled in the **More Blocks** menu
 
-    ![screen1](images/screen1.png)
+    ![screen1](images/new-blocks.png)
 
 1. Now use another `when greenflag clicked` block to set a variable called `pushed` to `False` when the script starts:
 
@@ -49,7 +50,7 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 
     ![screen4](images/screen4.png)
 
-### Basic traffic lights
+## Basic traffic lights
 
 1. Now you can create a basic traffic light sequence. The sequence for traffic lights is **Red**-->**Red/Amber**-->**Green**-->**Amber**, and constantly repeated. This is the perfect excuse for a loop.
 
@@ -65,7 +66,7 @@ To save on using 5 different ground pins, you can just plug a single GND pin int
 
 1. Test out the sequence, and then try pushing the button. The traffic light sequence should finish and then stop.
 
-### Crossing the road
+## Crossing the road
 
 To help the visually impaired, a crossing normally beeps when it is safe to cross.
 

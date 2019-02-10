@@ -1,4 +1,4 @@
-# Physical computing with Scratch
+# Physical computing with Scratch 2
 
 ## GPIO pins
 
@@ -46,9 +46,9 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 
 ![Test Circuit](images/led-gpio17.png)
 
-## Constructing a Scratch program
+## Constructing a Scratch 2 program
 
-1.  Locate the Scratch program by clicking on **Menu** followed by **Programming**, and selecting **Scratch**.
+1.  Locate the Scratch 2 program by clicking on **Menu** followed by **Programming**, and selecting **Scratch 2**, remember to use version 2, not version 1.
 
  ![](images/scratch-icon.png)
 
@@ -56,19 +56,23 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 
  ![](images/Scratch-interface.png "The Scratch Interface")
 
-1.  Click on **Control** in the top-left display. Drag the `when GreenFlag clicked` block onto the scripts area:
+1. We need to setup Scratch to use the GPIO pins. Click on **More Blocks** in the top right display and click on **Add an Extension**.
+
+![](images/add-an-extension.png)
+
+1. Select Pi GPIO and click on.  
+
+![](images/pi-gpio.png)
+
+1. You will see two new blocks appear, we will be using these to control and sense the GPIO pins.
+
+![](images/new-blocks.png)
+
+1.  Click on **Events** in the top-right (Scripts tab) display. Drag the `when GreenFlag clicked` block onto the scripts area:
 
   ![greenflag](images/greenflag.png)
 
-1. Scratch uses **broadcast** blocks to communicate with the GPIO pins; the first broadcast you need is `gpioserveron` which activates the GPIO functionality:
-
-  ![gpioserveron](images/gpioserveron.png)
-
-1. As your GPIO pin can be used as either input or output, you'll need to specify in which mode your pin is being used with the `config17out` broadcast:
-
-  ![config17on](images/config17.png)
-
-1. From this point on, you can control your LED using two broadcasts: `gpio17high` to turn it on and `gpio17low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
+1. From this point on, you can control your LED using the two new blocks: `set gpio 17 to output high` to turn it on and `set gpio 17 to output low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
 
   ![Flashing LED](images/led_flash.png)
 
@@ -79,28 +83,37 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 1. Connect your button to a breadboard, then connect one pin to a ground pin and the other to a numbered GPIO pin. In this example **pin 2** has been used:
 
 ![Button wiring](images/button.png)
+`Not this image is incorrect for Scratch 2. The switch needs to be connected to 3v3 rather than Gnd`
 
 ## Configuring your button
 
-1. Before Scratch can react to your button, it needs to be told which pin is configured as an input pin.
+1. Assuming you have started a new Scratch file, you'll need to check the `Pi GPIO` extension is enabled with the two GPIO blocks available.
 
-1. Assuming you have started a new Scratch file, you'll also need to start the GPIO server. The following code will configure pin 4 as an input:
+1. Next, you need to go to the Data menu in Scratch and create a new variable called `Button`:
 
-  ![Configure Pin 2](images/config2.png)
+  ![Data Menu](images/button-variable.png)
 
-1. Once you have built the code above, you need to click the green flag in order for it to run and for your pin to be set up.
+1. Make sure the check box next to the new variable is checked.
 
-1. Next, you need to go to the Sensing menu in Scratch:
-
-  ![Sensing Menu](images/sensing.png)
-
-1. From here you need to find the ![Slider Sensor](images/slider_sensor.png) block and click the triangle to reveal a menu. Select **gpio2** from the menu and click the tickbox to the left:
-
-  ![Select sensor](images/sensing_select.png)
-
-1. You should now see the current state of the pin in the stage area:
+1. You should now see the `button` variable in the stage area:
 
   ![Button state](images/button_watch.png)
+
+1. You'll now need a code block to read the button and update the `button` variable
+
+1. Pull in the `when green flag clicked` block from the **Event** menu.  Place an `if, then, else` block in a `forever` block at attach to the `when green flag clicked block`
+
+  ![If, then, else block](images/if-then-else.png)
+
+1. You need the block to check when the button is pressed, so add `set gpio 21 to output high` from the **more blocks** menu to the `if` block
+
+1. From the **Data** menu drag `set button to 1` into the `then` block
+
+1. From the **Data** menu drag `set button to 0` into the `else` block
+
+  ![button press block](images/button-press-block.png)
+
+1. Press the green flag to run the code
 
 1. Now when you press your button, the state should change from 1 to 0.
 
@@ -110,11 +123,9 @@ You can test whether your GPIO pins and LEDs are working by building the circuit
 
 1. Begin with a `forever` loop with an `if` block inside it. This will continually check the `if` condition and perform some action if the condition is met. The action in the example below will make the current sprite say "Hello!":
 
-    ![Loop with condition](images/conditional_loop.png)
+1. Finally, to make this work you need to add the condition, which is that we want the sprite to speak when the **gpio 21 is high**:
 
-1. Finally, to make this work you need to add the condition, which is that we want the sprite to speak when the **button value = 0**:
-
-    ![Complete Code](images/button_code.png)
+    ![Loop with condition](images/say-hello.png)
 
 If everything is correct, your button should make the sprite speak.
 
@@ -135,5 +146,3 @@ There are lots of other things you can control or monitor with your Raspberry Pi
 [Using an active buzzer](buzzer.md)  
 [Making traffic lights](trafficlights.md)  
 [Using a PIR sensor](pir.md)  
-
-
