@@ -19,7 +19,7 @@ Your browser does not support WebM video, try FireFox or Chrome
 --- /no-print ---
 
 --- print-only ---
-![alarm](images/alarm.png)
+![alarm](images/alarm.jpg)
 --- /print-only ---
 
 --- collapse ---
