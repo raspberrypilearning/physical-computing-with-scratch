@@ -19,7 +19,7 @@ Set up the circuit as shown below:
 ![buzzer](images/buzzer-circuit.png)
 
 ### Coding a buzzer
-
+--- task ---
 Now you can sound the buzzer by using the code below:
 
 ```blocks3
@@ -40,5 +40,4 @@ set gpio (17 v) to output [high v] ::extension
 when gpio (2 v) is [low v] ::hat extension
 set gpio (17 v) to output [low v] ::extension
 ```
-
-
+--- /task ---
