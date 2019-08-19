@@ -1,6 +1,6 @@
 --- no-print ---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 1.4 version of the project](https://projects.raspberrypi.org/en/projects/physical-computing-with-scratch-14){:target="_blank"}.
+This is the **Scratch 3** version of the project. There is also a [Scratch 1.4 version of the project](https://projects.raspberrypi.org/en/projects/physical-computing-with-scratch14){:target="_blank"}.
 
 --- /no-print ---
 
