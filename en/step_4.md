@@ -11,7 +11,6 @@ Connect your button to a breadboard, then connect one pin to a ground pin and th
 --- task ---
 Test that your button is working using this simple script
 
-
 ```blocks3
 when button (2 v) is [pressed v] ::hat extension
 say [hello] for (2) secs
@@ -24,10 +23,12 @@ Press the button and the sprite should say `hello`.
 
 --- task ---
 Can you use the extension to control an LED using a button?
+
 --- hints --- --- hint ---
 When the button is pressed, the LED should come on.
 When the button is released, the LED should turn off.
 --- /hint --- --- hint ---
+
 Here are the blocks you will need to use
 
 ```blocks3
@@ -39,6 +40,7 @@ turn LED (17 v) [off v] ::extension
 
 turn LED (17 v) [on v] ::extension
 ```
+
 --- /hint --- --- hint ---
 Here are the completed scripts
 
@@ -49,5 +51,6 @@ turn LED (17 v) [on v] ::extension
 when button (2 v) is [released v] ::hat extension
 turn LED (17 v) [off v] ::extension
 ```
+
 --- /hint --- --- /hints ---
 --- /task ---
