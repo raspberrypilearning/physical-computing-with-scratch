@@ -1,14 +1,72 @@
-## What you will make
-The version of Scratch included with the Raspberry Pi has a number of unique features; one of the most useful is its ability to communicate with the GPIO pins (General Purpose Input Output). These pins allow you to connect your Raspberry Pi to a range of devices, from lights and motors to buttons and sensors. The original Raspberry Pi had a 26-pin header and newer models (B+, Pi 2, Pi 3, etc) have a 40-pin header, but this workshop will work with any model.
+--- no-print ---
 
-## What you will learn
-By completing this resource you will learn:
+This is the **Scratch 3** version of the project. There is also a [Scratch 1.4 version of the project](https://projects.raspberrypi.org/en/projects/physical-computing-with-scratch-14){:target="_blank"}.
 
-- How to control the GPIO pins using Scratch
-- How to receive input from the GPIO pins using Scratch
+--- /no-print ---
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+## Introduction
 
-- [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator)
-- [Use basic digital, analogue, and electromechanical components](https://www.raspberrypi.org/curriculum/physical-computing/creator)
+In this project you will learn how to control various electronic components using the latest version of Scratch on the Raspberry Pi.
+
+### What you will make
+
+--- no-print ---
+<video width="640" height="360" controls>
+<source src="images/alarm.webm" type="video/webm">
+Your browser does not support WebM video, try FireFox or Chrome
+</video>
+
+--- /no-print ---
+
+--- print-only ---
+![alarm](images/alarm.png)
+--- /print-only ---
+
+--- collapse ---
+---
+title: What you will need
+---
+
+### Hardware
+
+- A Raspberry Pi 4
+- An LED
+- A 47 - 330 ohm resistor
+- A tactile button
+- A buzzer
+- A PIR motion sensor
+- Male to Female jumper leads
+- Female to Female jumper leads
+
+### Software
+
+Scratch 3 - if not already installed, open a terminal and type:
+
+```bash
+sudo apt install scratch3
+```
+
+### Downloads
+
+A completed project file can be found [here](http://rpf.io/p/en/physical-computing-with-scratch-get){:target="_blank"}.
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will learn
+---
+- How to control and LED with Scratch
+- How to detect button presses with Scratch
+- How to detect motion with Scratch
+--- /collapse ---
+
+--- collapse ---
+---
+title: Additional information for educators
+---
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/physical-computing-with-scratch/print){:target="_blank"}.
+
+You can find the [completed project here](http://rpf.io/p/en/physical-computing-with-scratch-get){:target="_blank"}.
+
+--- /collapse ---
 
