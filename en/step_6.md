@@ -1,26 +1,38 @@
-## Constructing a Scratch program
+## Passive infrared motion sensor (PIR)
 
--  Locate the Scratch program by clicking on **Menu** followed by **Programming**, and selecting **Scratch**.
+Humans and other animals emit heat all the time. 
 
- ![](images/scratch-icon.png)
+A PIR sensor detects changes in the amount of IR radiation (heat) it receives. When there is a change, then a pulse is triggered. This means that a PIR sensor can detect when a human (or any animal) moves in front of it.
 
-- The familiar Scratch interface will then load:
+![pir](images/pir_module.png)
 
- ![](images/Scratch-interface.png "The Scratch Interface")
+The pulse emitted when a PIR detects motion needs to be amplified, and so it needs to be powered. There are three pins on the PIR; they should be labeled `Vcc`, `Gnd`, and `Out`. If these labels aren't clear, they are sometimes concealed beneath the Fresnel lens (the white cap), which you can temporarily remove to see the pin labels.
 
--  Click on **Control** in the top-left display. Drag the `when GreenFlag clicked` block onto the scripts area:
+--- task ---
+Wire up your PIR sensor to your Raspberry Pi
 
-  ![greenflag](images/greenflag.png)
+![wiring](images/pir_wiring.png)
 
-- Scratch uses **broadcast** blocks to communicate with the GPIO pins; the first broadcast you need is `gpioserveron` which activates the GPIO functionality:
+As shown above, the `Vcc` pin needs attaching to a `5V` pin on the Raspberry Pi.
+The `Gnd` pin on the PIR sensor can be attached to *any* ground pin on the Raspberry Pi.
+Lastly, the `Out` pin needs to be connected to any of the GPIO pins.
+--- /task ---
 
-  ![gpioserveron](images/gpioserveron.png)
+--- task ---
+The PIR acts a little like a button. Add the following code, so that the sprite can detect any motion in your area.
 
-- As your GPIO pin can be used as either input or output, you'll need to specify in which mode your pin is being used with the `config17out` broadcast:
+```blocks3
+when flag clicked
+set gpio (17 v) to input [pulled low] ::extension
 
-  ![config17on](images/config17.png)
+when gpio (17 v) is [high v] ::hat extension
+say [you moved]
 
-- From this point on, you can control your LED using two broadcasts: `gpio17high` to turn it on and `gpio17low` to turn it off. Using these two messages and some pauses, you can make an LED flash continuously:
+when gpio (17 v) is [low v] ::hat extension
+say [you're still]
+```
+--- /task ---
 
-  ![Flashing LED](images/led_flash.png)
+If your PIR doesn't seem to work, then you might like to try tuning it a little.
 
+[[[generic-electronics-tune-pir]]]

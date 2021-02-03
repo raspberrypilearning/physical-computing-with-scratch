@@ -1,8 +1,6 @@
-## Connecting a button
+## Challenge: Make a burglar alarm
 
-- As well as controlling the physical world, you can react to it using an input device such as a button.
+Now that you know how to use LEDs, buttons, buzzers and a PIR. Why not try and make your very own burglar alarm.
 
-- Connect your button to a breadboard, then connect one pin to a ground pin and the other to a numbered GPIO pin. In this example **pin 2** has been used:
-
-![Button wiring](images/button.png)
-
+1. When motion is detected in the room, the LED should flash and the buzzer should beep.
+1. Only pushing the button will turn off the LED and the buzzer.
