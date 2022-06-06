@@ -18,15 +18,15 @@ version: 3
 last_tested: 2019-08-19
 steps:
 - title: Introduction
-  completion: engaged
 - title: Lighting an LED
 - title: Using a switchable pin
-  completion: engaged
+  completion:
+  - engaged
 - title: Connecting a button
 - title: Buzzers
-  completion: internal
 - title: Passive infrared motion sensor (PIR)
-  completion: internal
+  completion:
+  - internal
 - title: 'Challenge: Make a burglar alarm'
   challenge: true
 - title: What next?
