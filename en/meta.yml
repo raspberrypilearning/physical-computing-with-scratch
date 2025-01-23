@@ -30,3 +30,5 @@ steps:
 - title: 'Challenge: Make a burglar alarm'
   challenge: true
 - title: What next?
+  completion:
+  - external
