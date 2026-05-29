@@ -24,24 +24,8 @@ Press the button and the sprite should say `hello`.
 --- task ---
 Can you use the extension to control an LED using a button?
 
---- hints --- --- hint ---
-When the button is pressed, the LED should come on.
-When the button is released, the LED should turn off.
---- /hint --- --- hint ---
-
-Here are the blocks you will need to use
-
-```blocks3
-when button (2 v) is [pressed v] ::hat extension
-
-when button (2 v) is [released v] ::hat extension
-
-turn LED (17 v) [off v] ::extension
-
-turn LED (17 v) [on v] ::extension
-```
-
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here are the completed scripts
 
 ```blocks3
@@ -52,5 +36,7 @@ when button (2 v) is [released v] ::hat extension
 turn LED (17 v) [off v] ::extension
 ```
 
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
 --- /task ---

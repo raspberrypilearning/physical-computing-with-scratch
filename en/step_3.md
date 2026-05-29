@@ -38,16 +38,8 @@ turn LED (17 v) [off v] ::extension
 --- task ---
 Can you make the LED flash on and off repeatedly?
 
---- hints --- --- hint ---
-You can use a `forever`{:class="block3control"} block to make you script loop.
---- /hint --- --- hint ---
-Here's the additional blocks you will need to add to your script
-```blocks3
-wait (1) secs
-
-forever
-```
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here's what the completed script would look like.
 ```blocks3
 when flag clicked
@@ -57,5 +49,7 @@ wait (1) secs
 turn LED (17 v) [off v] ::extension
 wait (1) secs
 ```
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
 --- /task ---
